@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Rejsz-Royce</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/DjangoTemplate/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/DjangoTemplate/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/static/DjangoTemplate/css/grayscale.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Kezdőlap</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Rólunk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Zenék</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Kapcsolat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Rejsz-Royce</h1>
+              <p class="intro-text">
+                </p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Rejsz-Royce</h2>
+            <p>Kedves punkzenekar vagyunk mi csodálatos zenékkel és humorral.</p>
+     <!--              <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+            <p>This theme features stock photos by
+     <!--              <a href="http://gratisography.com/">Gratisography</a>
+              along with a custom Google Maps skin courtesy of
+     <!--              <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+            <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2>Zenék</h2>
+          <p>Zenék az egész családnak.</p>
+
+          <audio id="audio" controls>
+              <source src="http://docs.google.com/uc?export=open&id=1oRVy7ehUr6XtNM8JNoInuTKcM-DZ29f8">
+          </audio>
+          <audio id="audio1" controls>
+              <source src="http://docs.google.com/uc?export=open&id=1gitb1f4RmewHxjxp0qhqFnyElSvI7hyi">
+          </audio>
+          <div id="controls">
+             <button id="playpause" title="play" onclick="togglePlayPause()" >Play</button>
+          </div>
+          <input id="volume" min="0" max="1" step="0.1" type="range" onchange="setVolume()" />
+
+          <button id="mute" onclick="toggleMute()">Mute</button>
+          <div id="progressBar">
+              <div id="progress"></div>
+          </div>
+     <!--      <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a> -->
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Kapcsolat velünk</h2>
+            <p>Feel free to leave us a comment on the
+              <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a>
+              on Start Bootstrap to give some feedback about this theme!</p>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
+                  <i class="fa fa-twitter fa-fw"></i>
+                  <span class="network-name">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
+                  <i class="fa fa-google-plus fa-fw"></i>
+                  <span class="network-name">Google+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Map Section
+    <div id="map"></div> -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Rejsz-Royce 2018</p>
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/DjangoTemplate/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/DjangoTemplate/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/DjangoTemplate/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
+
+    <!-- Custom scripts for this template
+
+    audio.addEventListener("timeupdate", updateProgress, false);
+    -->
+    <script src="/static/DjangoTemplate/js/grayscale.js"></script>
+
+
+
+  </body>
+
+</html>
+
+<script>
+
+
+   // Grab a handle to the video
+   var audio = document.getElementById("audio");
+   // Turn off the default controls
+   audio.controls = false;
+
+   var audio1 = document.getElementById("audio1");
+   // Turn off the default controls
+   audio1.controls = false;
+
+  audio.addEventListener("timeupdate", updateProgress, false);
+  function togglePlayPause() {
+   var playpause = document.getElementById("playpause");
+   if (audio.paused || audio.ended) {
+      playpause.title = "pause";
+      playpause.innerHTML = "pause";
+
+      audio.play();
+   }
+   else {
+      playpause.title = "play";
+      playpause.innerHTML = "play";
+      audio.pause();
+   }
+}
+
+function setVolume() {
+   var volume = document.getElementById("volume");
+   audio.volume = volume.value;
+}
+
+function toggleMute() {
+   audio.muted = !audio.muted;
+}
+
+function updateProgress() {
+   var progress = document.getElementById("progress");
+
+   var value = 0;
+   if (audio.currentTime > 0) {
+      value = Math.floor((100 / audio.duration) * audio.currentTime);
+   }
+
+   progress.style.width = value + "%";
+}
+
+
+
+
+
+
+
+</script>
+
+
+<!-- https://drive.google.com/file/d/1oRVy7ehUr6XtNM8JNoInuTKcM-DZ29f8/view?usp=sharing -->
